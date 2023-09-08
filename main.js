@@ -4,21 +4,20 @@ const numB = document.querySelector('input#campoB');
 const mensagemErro = document.getElementById('mensagem-erro');
 
 function check() {
-    let a = numA.value;
-    let b = numB.value;
+    let a = parseInt(numA.value);
+    let b = parseInt(numB.value);
 
-    if (a > b){
+    if (a >= b){
         return false;
-
     } else {
-        return true;
+    return true;
     }
 }
 
 form.addEventListener ('submit', function (e) {
     e.preventDefault();
     const mensagemSucesso = `Deu certo, o primeiro número é <b>menor</b> que o segundo.`;
-    const mensagemErro = `O primeiro número está <b>maior</b> que o segundo, isso não esta correto.`;
+    const mensagemErro = `O primeiro número está <b>maior</b> ou <b>igual</b> ao segundo, isso não esta correto.`;
     const estiloMensagemErro = document.querySelector('.mensagem-erro');
     const estiloMensagemSucesso = document.querySelector('.mensagem-sucesso');
     const numerosDigitados = `Você digitou o seguinte: ${numA.value} no campo A e ${numB.value} no campo B`;
@@ -37,6 +36,9 @@ form.addEventListener ('submit', function (e) {
         estiloMensagemErro.innerHTML = mensagemErro;
         estiloMensagemErro.style.display = 'block';
         estiloMensagemSucesso.style.display = 'none'
+        estiloNumerosDigitados.innerHTML = numerosDigitados
+        estiloNumerosDigitados.style.display = 'block';
+
         numA.value = '';
         numB.value = '';
     }
