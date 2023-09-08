@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Comparador</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem vindo ao comparador</h1>
+        <h2>Digite dois números, o primeiro deve ser menor que o segundo:</h2>
+        <form id="form-comparador">
+            <input type="number" id="campoA" required placeholder="Digite o primeiro número" />
+            <p class="mensagem-erro"></p>
+            <input type="number" id="campoB" required placeholder="Digite o segundo número" />
+            <button type="submit">Analisar</button>
+        </form>
+        <p class="mensagem-sucesso"></p>
+        <p class="numeros-digitados"></p>
+    </div>
+    <script src="main.js" ></script>
+</body>
+</html>

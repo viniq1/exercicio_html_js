@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+    background-color: rgba(135,206,235,0.8);
+    padding: 50px;
+    border-radius: 10%;
+    color: black;
+    text-align: center;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input, textarea, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: rgba(104, 158, 180, 0.8);
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(121, 164, 181, 0.8);
+}
+
+.mensagem-erro {
+    background-color: rgba(255,0,0,0.8);
+    color: white;
+    padding: 10px;
+    display: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.mensagem-sucesso {
+    background-color: rgba(50,205,50,0.8);
+    color: black;
+    padding: 10px;
+    margin-bottom: 8px;    
+    display: none;
+}
+
+.numeros-digitados {
+    background-color: rgba(104, 158, 180, 0.8);
+    color: black;
+    padding: 8px;
+    display: none;
+    font-style: italic;
+    font-weight: bold;
+}
